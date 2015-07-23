@@ -1,0 +1,1 @@
+VARNISHACCESS %{IPORHOST:client_ip} (?:%{WORD:ident}|-) (?:%{WORD:auth}|-) \[%{HTTPDATE:timestamp}\] "%{WORD:verb} %{GREEDYDATA:request} HTTP/%{NUMBER:httpversion}" %{NUMBER:response} (?:%{NUMBER:bytes}|-) "(?:%{URI:referrer}|-)" "%{GREEDYDATA:agent}"
